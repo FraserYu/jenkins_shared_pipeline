@@ -6,7 +6,10 @@ def call(body) {
     body()
 
     //自定义code
-    echo NAME
-    echo STORY_NAME
-    echo VERSION
+    script {
+        echo "${NAME}"
+        echo "${STORY_NAME}"
+        echo "${VERSION}"
+    }
+    
 }
