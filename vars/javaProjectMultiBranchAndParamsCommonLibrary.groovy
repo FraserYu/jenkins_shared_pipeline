@@ -10,5 +10,31 @@ def call(body) {
     echo "${pipelineParams.STORY_NAME}"
     echo "${pipelineParams.VERSION}"  
 
-    
+    pipeline {
+        agent none
+
+        stages {
+            stage('Load Variables') {
+                steps {
+                    scripts {
+                        pipelineParams.each {
+                            k, v -> env."${k}" = "${v}"
+                        }
+                    }
+                }
+            }
+
+            stage('Build') {
+                echo BUILD_STAGE
+            }
+
+            stage('Test') {
+                echo TEST_STAGE
+            }
+
+            stage('Deploy') {
+                echo DEPLOY_STAGE
+            }
+        }
+    }
 }
