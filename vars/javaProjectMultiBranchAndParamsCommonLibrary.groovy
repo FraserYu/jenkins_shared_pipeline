@@ -5,10 +5,10 @@ def call(body) {
     body.delegate = pipelineParams
     body()
 
-    pipeline {
-        echo "${NAME}"
-        echo "${STORY_NAME}"
-        echo "${VERSION}"  
-    }
+    
+    echo "${pipelineParams.NAME}"
+    echo "${pipelineParams.STORY_NAME}"
+    echo "${pipelineParams.VERSION}"  
+
     
 }
