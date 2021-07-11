@@ -5,11 +5,10 @@ def call(body) {
     body.delegate = pipelineParams
     body()
 
-    //自定义code
-    script {
+    pipeline {
         echo "${NAME}"
         echo "${STORY_NAME}"
-        echo "${VERSION}"
+        echo "${VERSION}"  
     }
     
 }
