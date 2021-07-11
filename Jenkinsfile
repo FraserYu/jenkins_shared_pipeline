@@ -4,6 +4,6 @@ javaProjectMultiBranchAndParamsCommonLibrary {
 
     NAME: 'rgyb rubbish'
     STORY_NAME: 'hello world'
-    VERSION: 1.1.0
+    VERSION: '1.1.0'
 
 }
