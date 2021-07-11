@@ -25,15 +25,21 @@ def call(body) {
             }
 
             stage('Build') {
-                echo BUILD_STAGE
+                steps {
+                    echo "${BUILD_STAGE}"
+                }  
             }
 
             stage('Test') {
-                echo TEST_STAGE
+                steps {
+                    echo "${TEST_STAGE}"
+                } 
             }
 
             stage('Deploy') {
-                echo DEPLOY_STAGE
+                steps {
+                    echo "${DEPLOY_STAGE}"
+                } 
             }
         }
     }
