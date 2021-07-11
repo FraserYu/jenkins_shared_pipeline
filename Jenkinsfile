@@ -1,6 +1,6 @@
 @Library('second-shared-pipeline') _
 
-javaProjectMultiParamsCommonLibrary {
+javaProjectMultiBranchAndParamsCommonLibrary {
 
     NAME: 'rgyb rubbish'
     STORY_NAME: 'hello world'
