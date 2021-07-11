@@ -16,7 +16,7 @@ def call(body) {
         stages {
             stage('Load Variables') {
                 steps {
-                    scripts {
+                    script {
                         pipelineParams.each {
                             k, v -> env."${k}" = "${v}"
                         }
