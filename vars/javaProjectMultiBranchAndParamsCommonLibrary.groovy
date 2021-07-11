@@ -6,7 +6,7 @@ def call(body) {
     body()
 
     //自定义code
-    echo "Welcome, ${NAME}."
-    echo "Let's talk about a story which names ${STORY_NAME}."
-    echo "Version is: ${VERSION}."
+    echo NAME
+    echo STORY_NAME
+    echo VERSION
 }
